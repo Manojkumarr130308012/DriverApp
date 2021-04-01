@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerInParent="true"
+    >
+
+    <ImageView
+        android:id="@+id/bgHeader"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:elevation="5dp"
+        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/truck"
+        tools:ignore="MissingConstraints" />
+
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cv"
+        android:layout_width="364dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_below="@+id/bgHeader"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="4dp"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="50dp">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                app:cardCornerRadius="9dp"
+                app:cardBackgroundColor="@color/md_grey_200">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical">
+
+                    <EditText
+                        android:id="@+id/et_name"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:lines="1"
+                        android:paddingStart="15dp"
+                        android:paddingEnd="15dp"
+                        android:paddingTop="15dp"
+                        android:paddingBottom="15dp"
+                        android:hint="User Name"
+                        android:singleLine="true"
+                        android:inputType="text"
+                        android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+                        android:background="@color/transparent"/>
+
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                app:cardCornerRadius="9dp"
+                app:cardBackgroundColor="@color/md_grey_200">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical">
+
+                    <EditText
+                        android:id="@+id/et_password"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:lines="1"
+                        android:hint="Password"
+                        android:paddingStart="15dp"
+                        android:paddingEnd="15dp"
+                        android:paddingTop="15dp"
+                        android:paddingBottom="15dp"
+                        android:singleLine="true"
+                        android:inputType="textPassword"
+                        android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+                        android:background="@color/transparent"/>
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cv"
+        android:layout_alignLeft="@+id/cv"
+        android:layout_alignRight="@+id/cv"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="-50dp"
+        android:id="@+id/rel"
+        android:layout_marginRight="35dp"
+        android:elevation="10dp">
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite" />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cv"
+        android:text="Please Register Your Account"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/colorPrimaryDark"></TextView>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dp"
+        android:layout_below="@+id/rel"
+        android:layout_alignLeft="@+id/rel"
+        android:layout_alignRight="@+id/rel"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="35dp"
+        android:elevation="10dp">
+
+        <Button
+            android:id="@+id/register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

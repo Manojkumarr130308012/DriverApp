@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">DriverApp</string>
+    <string name="map_key" translatable="false">AIzaSyDCPG0Op7pec1MAf9IOXlFrKXbBpe1yEV8</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
